@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>submitted</title>
+</head>
+<body>
+<!--
+<h1 style="color:green" th:text="Score is + ${score} + out of + ${total}">, <a th:href="@{/}"> redirect to home page!</a></h1>
+-->
+<h1 style="display: inline; color: green" th:text = " 'Score is ' + ${score}+ ' out of '+ ${total}+', '"> </h1>
+<h1 style="display: inline"> <a th:href="@{/}">redirect to home page!</a></h1>
+</body>
+</html>
