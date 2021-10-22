@@ -1,40 +1,59 @@
 <!DOCTYPE html>
-        <html lang="en" xmlns:th="http://www.thymeleaf.org">
-        <head>
-        <meta charset="UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
 
-        <title>new Question..</title>
-    <style>
-    .form{
-    margin: 10px;
-    }
-  </style>
+<title>new Question..</title>
+<style>
+.form {
+	margin: 10px;
+}
+</style>
 </head>
 <body>
-<p><a th:href="@{/}">-> home page</a></p>
-<div class="form">
-    Q)
-    <form action="updateQuestion" th:object = "${Question}" method="post">
+	<p>
+		<a th:href="@{/}">-> home page</a>
+	</p>
+	<div class="form">
+		Q)
+		<form action="updateQuestion" th:object="${Question}" method="post">
 
-        <textarea cols="100" rows="3" th:field = "*{Question}"/>
-        <br>
-        <div>
-            <div> A <input type="text"  th:field="*{options[0]}"></div>
-            <div> B <input type="text"  th:field="*{options[1]}"></div>
-            <div> C <input type="text"  th:field="*{options[2]}"></div>
-            <div> D <input type="text"  th:field="*{options[3]}"></div>
-        </div>
-        <br>
-        <div>Answer <input type="text"  th:field="*{answer}"></div>
-        <br>
-        <input style="display:block" type="submit">
-    </form>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+			<textarea cols="100" rows="3" th:field="*{Question}" />
+			<br>
+			<div>
+				<div>
+					A <input type="text" th:field="*{options[0]}">
+				</div>
+				<div>
+					B <input type="text" th:field="*{options[1]}">
+				</div>
+				<div>
+					C <input type="text" th:field="*{options[2]}">
+				</div>
+				<div>
+					D <input type="text" th:field="*{options[3]}">
+				</div>
+			</div>
+			<br>
+			<div>
+				Answer <input type="text" th:field="*{answer}">
+			</div>
+			<br> <input style="display: block" type="submit">
+		</form>
+	</div>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
 
 </body>
-</html></title>
+</html>
+</title>
 </head>
 <body>
 

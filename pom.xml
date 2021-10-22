@@ -12,6 +12,7 @@
 	<groupId>com.ramana</groupId>
 	<artifactId>test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>test</name>
 	<description>project for writing exam on online</description>
 	<properties>
@@ -42,8 +43,11 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-		 <dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> 
-			<scope>runtime</scope> </dependency> 
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
